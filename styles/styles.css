@@ -1,0 +1,113 @@
+/* Background image */
+body {
+    background-image: url('../images/images.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark overlay wrapper for accessibility */
+.page-wrapper {
+    background: rgba(98, 169, 221, 0.895);
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 12px;
+}
+
+/* Title */
+.title h1 {
+    font-family: fantasy;
+    color: #c13013;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    position: relative;
+    /* border-bottom: #c13013 solid 2px; */
+}
+
+.title h1::after {
+    content: "";
+    width: 850px;
+    height: 3px;
+    background: rgb(227, 15, 15);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+
+
+
+.about-section,
+.interests-section
+ {
+    text-align: left;
+}
+
+
+/* Section headings */
+.about-section h2,
+.interests-section h2
+ {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 10px 128px;
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+/* About text */
+.about-section p {
+    /* background-color: rgba(231, 231, 233, 0.675); */
+    text-align: left;
+    font-size: 32px;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* Interests list */
+.interests-section ul {
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    /* border: 2px solid #555; */
+    list-style: circle;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.interests-section li {
+    color: black;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+.extra-section h2 {
+    color: #FFFFFF;
+    border-top: #FFFFFF solid 2px;
+    padding-top: 18px;
+    text-align: left;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+
+/* Contact section */
+.extra-section p {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
