@@ -5,6 +5,94 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+/* Navigation bar */
+.navbar {
+    width: 100vw;
+    background: rgb(3, 93, 249);
+    padding: 12px 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.navbar ul {
+    max-width: 900px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 12px;
+}
+
+/* Keyboard clicking and hovering things for navigation */
+.navbar a:focus{
+    outline: 1px solid white;
+    background: rgb(2, 19, 251);
+}
+
+.navbar a:hover{
+    outline: 1px solid white;
+
+}
+
+
+/* Reading list */
+.reading-list ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.reading-list a {
+    font-size: 20px;
+    color: black;
+}
+
+/* Keyboard clicking and hovering things for readling link */
+.reading-list a:focus {
+    outline: 1px solid white;
+}
+
+.reading-list a:hover {
+    outline: 1px solid white;
+
+}
+
+.reading-list h2 {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.reading-list ul {
+    list-style:inside;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.reading-list li {
+    color: black;
+    font-size: 23px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
 /* Dark overlay wrapper for accessibility */
 .page-wrapper {
     background: rgba(98, 169, 221, 0.895);
@@ -16,10 +104,12 @@ body {
 
 /* Title */
 .title h1 {
-    font-family: fantasy;
+    font-family:cursive;
+    font-size: 50px;
     color: #c13013;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 0px;
     padding-bottom: 0px;
     position: relative;
     /* border-bottom: #c13013 solid 2px; */
@@ -79,7 +169,7 @@ body {
 .interests-section ul {
     /* background-color: rgba(0, 0, 0, 0.7); */
     /* border: 2px solid #555; */
-    list-style: circle;
+    list-style: inside circle;
     padding: 10px;
     border-radius: 10px;
 }
@@ -110,4 +200,44 @@ body {
     padding: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+
+
+.keyboard-docs h2 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 10px 128px;
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.keyboard-docs p {
+    text-align: left;
+    font-size: 32px;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+.keyboard-docs ul {
+    list-style: inside decimal;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.keyboard-docs li {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
