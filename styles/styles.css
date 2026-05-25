@@ -241,3 +241,88 @@ body {
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
+
+body.NBA {
+    background: black;
+    background-image: none;
+    
+}
+
+.finals-wrapper {
+    max-width: 1800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+.finals {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.finals-img {
+    width: 100%;
+    height: 890px;
+    object-fit:fill;
+    object-position: top;
+    filter: brightness(90%);
+}
+
+
+
+.finals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 5px;
+}
+
+.finals-card {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 5px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.finals-card:hover {
+    transform: translateY(-23px);
+}
+
+.card-img {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px;
+}
+
+/* TEXT OVERLAY */
+.finals-card h3,
+.finals-card p {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    color: white;
+    opacity: 0;
+    transform: translateY(23px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.finals-card h3 {
+    bottom: 400px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.finals-card p {
+    bottom: 50px;
+    font-size: 29px;
+}
+
+/* SHOW TEXT ON HOVER */
+.finals-card:hover h3,
+.finals-card:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
